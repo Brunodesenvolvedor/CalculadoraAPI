@@ -1,4 +1,4 @@
-# Calculadora API (Lei-me gerado por inteligência artifial)
+# Calculadora API
 
 A Calculadora API é uma aplicação que permite realizar operações matemáticas básicas (soma, subtração, multiplicação, divisão) via uma API RESTful. Ela também mantém um histórico de cálculos realizados, que pode ser consultado e excluído.
 

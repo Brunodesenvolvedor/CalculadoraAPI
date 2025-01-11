@@ -1,0 +1,68 @@
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\appsettings.Development.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\appsettings.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.exe
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.deps.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.runtimeconfig.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.pdb
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.csproj.AssemblyReference.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.AssemblyInfoInputs.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.AssemblyInfo.cs
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.csproj.CoreCompileInputs.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.MvcApplicationPartsAssemblyInfo.cs
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.MvcApplicationPartsAssemblyInfo.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets.build.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets.development.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets\msbuild.Calculadora API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets\msbuild.build.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\scopedcss\bundle\Calculadora API.styles.css
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.csproj.CopyComplete
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\refint\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.pdb
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.genruntimeconfig.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\ref\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\bin\Debug\net8.0\Calculadora API.staticwebassets.runtime.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\appsettings.Development.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\appsettings.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.staticwebassets.runtime.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.exe
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.deps.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.runtimeconfig.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Calculadora API.pdb
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.csproj.AssemblyReference.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.AssemblyInfoInputs.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.AssemblyInfo.cs
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.csproj.CoreCompileInputs.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.MvcApplicationPartsAssemblyInfo.cs
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.MvcApplicationPartsAssemblyInfo.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets.build.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets.development.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets\msbuild.Calculadora API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets\msbuild.build.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Calculadora API.props
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\scopedcss\bundle\Calculadora API.styles.css
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.csproj.CopyComplete
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\refint\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.pdb
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.genruntimeconfig.cache
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\ref\Calculadora API.dll

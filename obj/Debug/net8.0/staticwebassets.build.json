@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "JhobpUrxk4TbRISZn9vLldEcMC3cLAEsM714/G1MxOY=",
+  "Source": "Calculadora API",
+  "BasePath": "_content/Calculadora API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Calculadora API\\wwwroot",
+      "Source": "Calculadora API",
+      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\",
+      "BasePath": "_content/Calculadora API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\index.html",
+      "SourceId": "Calculadora API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\",
+      "BasePath": "_content/Calculadora API",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

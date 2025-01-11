@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Calculadora API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Calculadora API.props",
+      "PackagePath": "build\\Calculadora API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Calculadora API.props",
+      "PackagePath": "buildMultiTargeting\\Calculadora API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Calculadora API.props",
+      "PackagePath": "buildTransitive\\Calculadora API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

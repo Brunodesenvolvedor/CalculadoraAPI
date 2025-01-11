@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora API</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #calcularForm {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        td button:hover {
+            background-color: #e53935;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            #calcularForm {
+                width: 100%;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora API</h1>
+
+        <h2>1. Realizar Operação</h2>
+        <form id="calcularForm">
+            <label for="valorA">Valor A:</label>
+            <input type="number" id="valorA" required>
+            <br><br>
+            <label for="valorB">Valor B:</label>
+            <input type="number" id="valorB" required>
+            <br><br>
+            <label for="operacao">Operação:</label>
+            <select id="operacao" required>
+                <option value="+">Soma (+)</option>
+                <option value="-">Subtração (-)</option>
+                <option value="*">Multiplicação (*)</option>
+                <option value="/">Divisão (/)</option>
+            </select>
+            <br><br>
+            <button type="submit">Calcular</button>
+        </form>
+
+        <h2>2. Histórico de Cálculos</h2>
+        <table id="historicoTabela">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Valor A</th>
+                    <th>Valor B</th>
+                    <th>Operação</th>
+                    <th>Resultado</th>
+                    <th>Data</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function exibirHistorico() {
+            $.get("/api/calculadora/historico", function(data) {
+                var tabelaCorpo = $("#historicoTabela tbody");
+                tabelaCorpo.empty(); // Limpa a tabela antes das novas linhas
+
+                data.forEach(function(item) {
+                    var dataFormatada = new Date(item.dataHora).toLocaleString('pt-BR', {
+                        day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+                    });
+
+                    var novaLinha = `<tr>
+                        <td>${item.id}</td>
+                        <td>${item.valorA.toFixed(2)}</td>
+                        <td>${item.valorB.toFixed(2)}</td>
+                        <td>${item.operacaoRealizada}</td>
+                        <td>${item.resultado.toFixed(2)}</td>
+                        <td>${dataFormatada}</td>
+                        <td><button onclick="excluirOperacao('${item.id}')">Excluir</button></td>
+                    </tr>`;
+
+                    tabelaCorpo.append(novaLinha);
+                });
+            });
+        }
+
+        function excluirOperacao(id) {
+            $.ajax({
+                url: `/api/calculadora/excluirporid/${id}`,
+                type: 'DELETE',
+                success: function(result) {
+                    alert("Operação excluída com sucesso.");
+                    exibirHistorico(); 
+                },
+                error: function(error) {
+                    alert("Erro ao excluir a operação.");
+                }
+            });
+        }
+
+        // Envio pro servidor
+        $("#calcularForm").submit(function(event) {
+            event.preventDefault(); // Evita formulário (CGPT)
+
+            var valorA = parseFloat($("#valorA").val());
+            var valorB = parseFloat($("#valorB").val());
+            var operacao = $("#operacao").val();
+
+            $.ajax({
+                url: "/api/calculadora/calcular",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ valorA: valorA, valorB: valorB, operacao: operacao }),
+                success: function(response) {
+                    alert(response.mensagem);
+                    exibirHistorico(); 
+                },
+                error: function(error) {
+                    alert("Ocorreu um erro ao processar a operação.");
+                }
+            });
+        });
+
+        // Exibe o histórico ao carregar a página
+        $(document).ready(function() {
+            exibirHistorico();
+        });
+    </script>
+</body>
+</html>

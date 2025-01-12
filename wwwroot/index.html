@@ -19,13 +19,28 @@
             color: #333;
         }
 
-        .container {
-            width: 80%;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin: 20px auto;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+
+        .container, .historico-container {
+            width: 48%;
+            margin: 10px 0;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
         }
 
         #calcularForm {
@@ -48,13 +63,13 @@
         }
 
         button {
-            background-color: #4CAF50;
+            background-color: #003366; /* Azul escuro */
             color: white;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #002244; /* Tom mais escuro ao passar o mouse */
         }
 
         table {
@@ -79,15 +94,34 @@
             border: none;
             padding: 5px 10px;
             cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
         }
 
         td button:hover {
             background-color: #e53935;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                width: 95%;
+        .historico-container table {
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        .historico-container h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Ajuste da largura do botão */
+        td button {
+            width: auto;
+            padding: 5px 10px; /* Ajusta o padding do botão */
+            display: inline-block; /* Garante que o texto não quebre */
+        }
+
+        @media (max-width: 800px) {
+            .container, .historico-container {
+                width: 100%;
             }
 
             #calcularForm {
@@ -101,51 +135,55 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora API</h1>
+    <div class="content">
+        <div class="container">
+            <h1>Calculadora API</h1>
 
-        <h2>1. Realizar Operação</h2>
-        <form id="calcularForm">
-            <label for="valorA">Valor A:</label>
-            <input type="number" id="valorA" required>
-            <br><br>
-            <label for="valorB">Valor B:</label>
-            <input type="number" id="valorB" required>
-            <br><br>
-            <label for="operacao">Operação:</label>
-            <select id="operacao" required>
-                <option value="+">Soma (+)</option>
-                <option value="-">Subtração (-)</option>
-                <option value="*">Multiplicação (*)</option>
-                <option value="/">Divisão (/)</option>
-            </select>
-            <br><br>
-            <button type="submit">Calcular</button>
-        </form>
+            <h2>1. Realizar Operação</h2>
+            <form id="calcularForm">
+                <label for="valorA">Valor A:</label>
+                <input type="number" id="valorA" required>
+                <br><br>
+                <label for="valorB">Valor B:</label>
+                <input type="number" id="valorB" required>
+                <br><br>
+                <label for="operacao">Operação:</label>
+                <select id="operacao" required>
+                    <option value="+">Soma (+)</option>
+                    <option value="-">Subtração (-)</option>
+                    <option value="*">Multiplicação (*)</option>
+                    <option value="/">Divisão (/)</option>
+                </select>
+                <br><br>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
 
-        <h2>2. Histórico de Cálculos</h2>
-        <table id="historicoTabela">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Valor A</th>
-                    <th>Valor B</th>
-                    <th>Operação</th>
-                    <th>Resultado</th>
-                    <th>Data</th>
-                    <th>Excluir</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div class="historico-container">
+            <h2>2. Histórico de Cálculos</h2>
+            <table id="historicoTabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Valor A</th>
+                        <th>Valor B</th>
+                        <th>Operação</th>
+                        <th>Resultado</th>
+                        <th>Data</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
         function exibirHistorico() {
             $.get("/api/calculadora/historico", function(data) {
                 var tabelaCorpo = $("#historicoTabela tbody");
-                tabelaCorpo.empty(); // Limpa a tabela antes das novas linhas
+                tabelaCorpo.empty();
 
                 data.forEach(function(item) {
                     var dataFormatada = new Date(item.dataHora).toLocaleString('pt-BR', {
@@ -181,9 +219,8 @@
             });
         }
 
-        // Envio pro servidor
         $("#calcularForm").submit(function(event) {
-            event.preventDefault(); // Evita formulário (CGPT)
+            event.preventDefault();
 
             var valorA = parseFloat($("#valorA").val());
             var valorB = parseFloat($("#valorB").val());
@@ -204,7 +241,6 @@
             });
         });
 
-        // Exibe o histórico ao carregar a página
         $(document).ready(function() {
             exibirHistorico();
         });

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JhobpUrxk4TbRISZn9vLldEcMC3cLAEsM714/G1MxOY=",
+  "Hash": "1ReJ3vGJyEQv65Dp2gMpOkl374qrkF1DhHq1gEyDb/0=",
   "Source": "Calculadora API",
   "BasePath": "_content/Calculadora API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Calculadora API\\wwwroot",
       "Source": "Calculadora API",
-      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\",
+      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API\\wwwroot\\",
       "BasePath": "_content/Calculadora API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\index.html",
+      "Identity": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API\\wwwroot\\index.html",
       "SourceId": "Calculadora API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API - Copia\\wwwroot\\",
+      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API\\wwwroot\\",
       "BasePath": "_content/Calculadora API",
       "RelativePath": "index.html",
       "AssetKind": "All",

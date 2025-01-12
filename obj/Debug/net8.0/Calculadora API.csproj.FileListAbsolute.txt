@@ -66,3 +66,4 @@ D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\
 D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.pdb
 D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\Calculadora API.genruntimeconfig.cache
 D:\Pasta do Bruno\Profissionais\Programação\Calculadora API - Copia\obj\Debug\net8.0\ref\Calculadora API.dll
+D:\Pasta do Bruno\Profissionais\Programação\Calculadora API\obj\Debug\net8.0\Calculadora API.sourcelink.json

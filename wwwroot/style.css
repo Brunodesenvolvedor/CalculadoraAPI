@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.container, .historico-container {
+    width: 48%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+#calcularForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002244; /* Tom mais escuro ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    border: 1px solid #ddd;
+    vertical-align: middle; /* Centraliza o conteúdo verticalmente */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Ajusta o tamanho do botão */
+    cursor: pointer;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Faz o margin auto funcionar */
+    text-align: center;
+}
+
+td button:hover {
+    background-color: #e53935;
+}
+
+.historico-container table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.historico-container h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .container, .historico-container {
+        width: 100%;
+    }
+
+    #calcularForm {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1ReJ3vGJyEQv65Dp2gMpOkl374qrkF1DhHq1gEyDb/0=",
+  "Hash": "kohNvGnhRQfRWEG258ZTFSftkNgoovgZdK7JQg38f+I=",
   "Source": "Calculadora API",
   "BasePath": "_content/Calculadora API",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API\\wwwroot\\style.css",
+      "SourceId": "Calculadora API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Pasta do Bruno\\Profissionais\\Programação\\Calculadora API\\wwwroot\\",
+      "BasePath": "_content/Calculadora API",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
     }
   ]
 }

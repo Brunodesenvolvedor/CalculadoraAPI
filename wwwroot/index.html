@@ -107,6 +107,11 @@
                 success: function(response) {
                     alert(response.mensagem);
                     exibirHistorico(); 
+
+                    // Limpar os campos após o cálculo
+                    $("#valorA").val('');
+                    $("#valorB").val('');
+                    $("#operacao").val('+'); // ou qualquer valor padrão que você queira
                 },
                 error: function(error) {
                     alert("Ocorreu um erro ao processar a operação.");
